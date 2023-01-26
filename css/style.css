@@ -18,7 +18,7 @@
 
 #topBtn{
   position: fixed;
-  bottom: 40px;
+  bottom: 100px;
   right: 40px;
   font-size: 20px;
   width: 60px;
@@ -1177,7 +1177,7 @@ form #submit {
 
     #topBtn{
       position: fixed;
-      bottom: 40px;
+      bottom: 100px;
       right: 10px;
       opacity: .9;
     }
