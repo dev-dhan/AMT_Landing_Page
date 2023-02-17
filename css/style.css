@@ -17,18 +17,19 @@
 /*Go Up Button CSS*/
 
 #topBtn{
-  position: fixed;
+   position: fixed;
   bottom: 40px;
-  right: 28px;
-  font-size: 20px;
+  right: 30px;
+  font-size: 16px;
   width: 60px;
   height: 60px;
-  background: #717171;
-  color: var(--secondary-color);
+  background: var(--tertiary-color);
+  color: var(--additional-color);
   border: none;
   cursor: pointer;
   display: none;
   border-radius: 100px;
+  z-index: 999;
   
 }
 .welcome-con {
