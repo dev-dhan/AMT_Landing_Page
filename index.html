@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>TESTING</title>
+        <link rel="shortcut icon" href="images/AMT19.PNG">
+        <title>Landing Page</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="css/style.css" rel="stylesheet">
@@ -10,6 +11,8 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
          <!-- Ajax Script -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!-- AOS -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </head>
     <body>
         <div class="welcome-con" id="welcome-main">
@@ -26,152 +29,55 @@
                     <ul>
                         <li><a href="#welcome-main">Home</a></li>
                         <li><a href="#about-us-con">About Us</a></li>
-                        <li><a href="#slideshow-container">Our Themes</a></li>
                         <li><a href="#services">Our Services</a></li>
                         <li><a href="#our-plans-pricing-con">Pricing & Plans</a></li>
+                        <li><div class="nav-button" >
+                            <a href="#email-us-con" type="button">Contact Us</a>
+                        </div>
+                        </li>
                     </ul>
+                   
                 </nav>
+                
             </header>
             <!-- Welcome starts here -->
-            <section class="welcome-main" >
+            <section class="welcome-main">
                 <div class="welcome-desc-con">
-                    <h1 class="heading">need a business website?</h1>
-                    <p class="parag">Build a strong Brand Identity website with us 
+                    <h1 class="heading" data-aos="fade" data-aos-delay="100">need a business website?</h1>
+                    <p class="parag" data-aos="fade" data-aos-delay="200">Build a strong Brand Identity website with us 
                         that makes your Business Standout.</p>
+                        <div class="nav-button" >
+                            <a href="#email-us-con" type="button" data-aos="zoom-out" data-aos-delay="400">Explore Now!</a>
+                        </div>
                 </div>
-                <div class="img-container">
+                <div class="img-container welcome-float">
                     <img src="images/mainpage-img.png" alt="">
                 </div>
+               
             </section> 
         </div>
             <!-- About us starts here -->
         <section class="about-us-con" id="about-us-con">
-            <div class="about-video-con">
+            <div class="about-video-con" data-aos="fade" data-aos-delay="200">
                 <iframe width="100%" height="100%" src="https://www.youtube.com/embed/diaebjweWII" title="YouTube video player" frameborder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
-            <div class="about-desc-con">
+            <div class="about-desc-con" data-aos="fade" data-aos-delay="500">
                 <p class="all-parag-subheading">Click the video to know more about our services</p>
-                <p class="all-parag">We  are the  go to place of small Business owners to Manage their work, Build  a strong identity,
+                <p class="all-parag" >We  are the  go to place of small Business owners to Manage their work, Build  a strong identity,
                     attractive website, and captivate clients through social media and digital marketing.</p>
             </div>
+            
         </section>
-        <!-- Themes selection starts here -->
-        <section class="slideshow-container" id="slideshow-container">
-            <div style="text-align:center">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
-                <span class="dot" onclick="currentSlide(4)"></span>
-                <span class="dot" onclick="currentSlide(5)"></span>
-              </div>
-            <!-- Full-width images with number and caption text -->
-            <div class="mySlides fade">
-              <div class="theme-con">
-                <div class="img-con">
-                    <img src="images/template-1.png" alt="">
-                </div>
-                <div class="theme-desc-con">
-                    <p class="theme-subheading">Featured web design projects</p>
-                    <h1 class="theme-heading">THEME 1</h1>
-                    <p class="theme-content">sample description of the design website theme
-                        sample description of the design website theme
-                        sample description of the design website theme
-                        sample description of the design website theme
-                    </p>
-                    <a href="#"><button class="btn-theme">View Design</button></a>
-                </div>
-              </div>
-            </div>
-          
-            <div class="mySlides fade">
-                <div class="theme-con">
-                  <div class="img-con">
-                      <img src="images/template-1.png" alt="">
-                  </div>
-                  <div class="theme-desc-con">
-                      <p class="theme-subheading">Featured web design projects</p>
-                      <h1 class="theme-heading">THEME 2</h1>
-                      <p class="theme-content">sample description of the design website theme
-                          sample description of the design website theme
-                          sample description of the design website theme
-                          sample description of the design website theme
-                      </p>
-                      <a href="#"><button class="btn-theme">View Design</button></a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="mySlides fade">
-                <div class="theme-con">
-                  <div class="img-con">
-                      <img src="images/template-1.png" alt="">
-                  </div>
-                  <div class="theme-desc-con">
-                      <p class="theme-subheading">Featured web design projects</p>
-                      <h1 class="theme-heading">THEME 3</h1>
-                      <p class="theme-content">sample description of the design website theme
-                          sample description of the design website theme
-                          sample description of the design website theme
-                          sample description of the design website theme
-                      </p>
-                        <a href="#"><button class="btn-theme">View Design</button></a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="mySlides fade">
-                <div class="theme-con">
-                  <div class="img-con">
-                      <img src="images/template-1.png" alt="">
-                  </div>
-                  <div class="theme-desc-con">
-                      <p class="theme-subheading">Featured web design projects</p>
-                      <h1 class="theme-heading">THEME 4</h1>
-                      <p class="theme-content">sample description of the design website theme
-                          sample description of the design website theme
-                          sample description of the design website theme
-                          sample description of the design website theme
-                      </p>
-                      <a href="#"><button class="btn-theme">View Design</button></a>
-                  </div>
-                </div>
-              </div>
-
-
-              <div class="mySlides fade">
-                <div class="theme-con">
-                  <div class="img-con">
-                      <img src="images/template-1.png" alt="">
-                  </div>
-                  <div class="theme-desc-con">
-                      <p class="theme-subheading">Featured web design projects</p>
-                      <h1 class="theme-heading">THEME 5</h1>
-                      <p class="theme-content">sample description of the design website theme
-                          sample description of the design website theme
-                          sample description of the design website theme
-                          sample description of the design website theme
-                      </p>
-                      <a href="#"><button class="btn-theme">View Design</button></a>
-                  </div>
-                </div>
-              </div>
-          
-            <!-- Next and previous buttons -->
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-          </div>
-          <br>
-          
-        </section>
+      
 
         <section class="website-benefits" id="website-benefits">
-            <h1 class="all-heading">BENEFITS THAT YOU GET FROM OUR WEBSITES</h1>
-            <p class="all-parag-subheading">We optimize your website to boost more sales and create your business on top.</p>
+            <h1 class="all-heading" data-aos="zoom-in" data-aos-delay="200">BENEFITS THAT YOU GET FROM OUR WEBSITES</h1>
+            <p class="all-parag-subheading" data-aos="zoom-in" data-aos-delay="200">We optimize your website to boost more sales and create your business on top.</p>
             <div class="benefits-con">
                 <div class="benefit">
                     <div class="benefit-img-con benefit-img-con-1">
-                        <img src="images/benefit-1.png" alt="">
+                        <img src="images/benefit1.png" alt="">
                     </div>
                     <h3>WEBSITE AND MOBILE PHONE 
                         FRIENDLY </h3>
@@ -181,7 +87,7 @@
 
                 <div class="benefit">
                     <div class="benefit-img-con benefit-img-con-2">
-                        <img src="images/benefit-2.png" alt="">
+                        <img src="images/benefit2.png" alt="">
                     </div>
                     <h3>SEO FRIENDLY WEBSITE</h3>
                     <p>
@@ -193,7 +99,7 @@
 
                 <div class="benefit">
                     <div class="benefit-img-con benefit-img-con-3">
-                        <img src="images/benefit-3.png" alt="">
+                        <img src="images/benefit3.png" alt="">
                     </div>
                     <h3>WORRY FREE WEBSITE MAINTENANCE 
                         AND SUPPORT</h3>
@@ -204,7 +110,7 @@
 
                 <div class="benefit">
                     <div class="benefit-img-con benefit-img-con-4">
-                        <img src="images/benefit-4.png" alt="">
+                        <img src="images/benefit4.png" alt="">
                     </div>
                     <h3>SOCIAL MEDIA PROMOTION</h3>
                     <p>
@@ -215,7 +121,7 @@
                 
                 <div class="benefit">
                     <div class="benefit-img-con benefit-img-con-5">
-                        <img src="images/benefit-5.png" alt="">
+                        <img src="images/benefit5.png" alt="">
                     </div>
                     <h3>CHAT SYSTEM/ EMAIL SYSTEM </h3>
                     <p>
@@ -226,7 +132,7 @@
 
                 <div class="benefit">
                     <div class="benefit-img-con benefit-img-con-6">
-                        <img src="images/benefit-6.png" alt="">
+                        <img src="images/benefit6.png" alt="">
                     </div>
                     <h3>SOCIAL MEDIA INTEGRATION </h3>
                     <p>
@@ -238,7 +144,7 @@
 
                 <div class="benefit">
                     <div class="benefit-img-con benefit-img-con-7">
-                        <img src="images/benefit-7.png" alt="">
+                        <img src="images/benefit7.png" alt="">
                     </div>
                     <h3>GET THE DESIGN OF YOUR CHOICE  </h3>
                     <p>
@@ -250,13 +156,13 @@
         </section>
 
         <section class="email-us-con"  id="email-us-con" >
-            <div class="email-us-des-con">
+            <div class="email-us-des-con" data-aos="zoom-in" data-aos-delay="200">
                 <img src="images/email-pic.png" alt="">
                 <h1 class="all-parag-subheading">Talk to us!</h1>
                 <p class="all-parag-subheading">We optimize your website to boost more sales and create your business on top.</p>
             </div>
 
-            <div class="form-con">
+            <div class="form-con" data-aos="fade-up" data-aos-delay="200">
                 <form action="https://formspree.io/f/xyyakyvb" method="POST">
                     <h2>Help Us to get better by sending us you feedback!</h2>
                     <p>Will respond as soon as we recieve your message</p>
@@ -640,36 +546,9 @@
         </div>
             
         <button id="topBtn"><i class="fas fa-arrow-up"></i></button>
-       <!-- Messenger Chat Plugin Code -->
-    <div id="fb-root"></div>
-
-    <!-- Your Chat Plugin code -->
-    <div id="fb-customer-chat" class="fb-customerchat">
-    </div>
-
-    <script>
-      var chatbox = document.getElementById('fb-customer-chat');
-      chatbox.setAttribute("page_id", "100378746306263");
-      chatbox.setAttribute("attribution", "biz_inbox");
-    </script>
-
-    <!-- Your SDK code -->
-    <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          xfbml            : true,
-          version          : 'v15.0'
-        });
-      };
-
-      (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-    </script>
+         <!-- AOS -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="js/aos.js"></script>
         <script src="js/script.js"></script>
     </body>
 </html>
